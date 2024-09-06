@@ -62,7 +62,7 @@ echo -e "$COLOR1│                                                 │"
 echo -e "$COLOR1│${WH} Nama Duplikat Silahkan Buat Nama Lain.          $COLOR1│"
 echo -e "$COLOR1│                                                 │"
 echo -e "$COLOR1╰═════════════════════════════════════════════════╯${NC}"
-read -n 1 -s -r -p "Tekan [enter] untuk kembali ke menu"
+read -n 1 -s -r -p "Press any key to back on menu"
 add-tr
 fi
 done
@@ -281,7 +281,7 @@ echo -e "$COLOR1 ${NC} ${WH}    $author     " | tee -a /etc/trojan/akun/log-crea
 echo -e "$COLOR1 ◇━━━━━━━━━━━━━━━━━◇ ${NC}" | tee -a /etc/trojan/akun/log-create-${user}.log
 echo "" | tee -a /etc/trojan/akun/log-create-${user}.log
 systemctl restart xray > /dev/null 2>&1
-read -n 1 -s -r -p "Tekan [enter] untuk kembali ke menu"
+read -n 1 -s -r -p "Press any key to back on menu"
 menu
 }
 function trial-trojan(){
@@ -431,7 +431,7 @@ echo -e "$COLOR1 ${NC} ${WH}    $author     " | tee -a /etc/trojan/akun/log-crea
 echo -e "$COLOR1 ◇━━━━━━━━━━━━━━━━━◇ ${NC}" | tee -a /etc/trojan/akun/log-create-${user}.log
 echo "" | tee -a /etc/trojan/akun/log-create-${user}.log
 systemctl restart xray > /dev/null 2>&1
-read -n 1 -s -r -p "Tekan [enter] untuk kembali ke menu"
+read -n 1 -s -r -p "Press any key to back on menu"
 menu
 }
 function renew-tr(){
@@ -440,18 +440,18 @@ NUMBER_OF_CLIENTS=$(grep -c -E "^#tr " "/etc/xray/config.json")
 if [[ ${NUMBER_OF_CLIENTS} == '0' ]]; then
 clear
 echo -e "$COLOR1━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-echo -e "$COLOR1 ${NC}${COLBG1}    ${WH}   Renew Trojan Account        ${NC} $COLOR1 $NC"
+echo -e "$COLOR1 ${NC}${COLBG1}    ${WH}⇱ Renew Trojan Account ⇲     ${NC} $COLOR1 $NC"
 echo -e "$COLOR1━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo ""
 echo "You have no existing clients!"
 echo ""
 echo -e "$COLOR1━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo ""
-read -n 1 -s -r -p "Tekan [enter] untuk kembali ke menu"
+read -n 1 -s -r -p "Press any key to back on menu"
 m-trojan
 fi
 echo -e "$COLOR1━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-echo -e "$COLOR1 ${NC}${COLBG1}    ${WH}   Renew Trojan Account        ${NC} $COLOR1 $NC"
+echo -e "$COLOR1 ${NC}${COLBG1}    ${WH}⇱ Renew Trojan Account ⇲     ${NC} $COLOR1 $NC"
 echo -e "$COLOR1━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo " Select the existing client you want to renew"
 echo " ketik [0] kembali kemenu"
@@ -525,7 +525,7 @@ echo " Expired On  : $exp4"
 echo ""
 echo -e "$COLOR1━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo ""
-read -n 1 -s -r -p "Tekan [enter] untuk kembali ke menu"
+read -n 1 -s -r -p "Press any key to back on menu"
 m-trojan
 }
 function limit-tr(){
@@ -534,18 +534,18 @@ NUMBER_OF_CLIENTS=$(grep -c -E "^#tr " "/etc/xray/config.json")
 if [[ ${NUMBER_OF_CLIENTS} == '0' ]]; then
 clear
 echo -e "$COLOR1━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-echo -e "$COLOR1 ${NC}${COLBG1}    ${WH}   Limit Trojan Account        ${NC} $COLOR1 $NC"
+echo -e "$COLOR1 ${NC}${COLBG1}    ${WH}⇱ Limit Trojan Account ⇲     ${NC} $COLOR1 $NC"
 echo -e "$COLOR1━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo ""
 echo "You have no existing clients!"
 echo ""
 echo -e "$COLOR1━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo ""
-read -n 1 -s -r -p "Tekan [enter] untuk kembali ke menu"
+read -n 1 -s -r -p "Press any key to back on menu"
 m-trojan
 fi
 echo -e "$COLOR1━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-echo -e "$COLOR1 ${NC}${COLBG1}    ${WH}   Limit Trojan Account        ${NC} $COLOR1 $NC"
+echo -e "$COLOR1 ${NC}${COLBG1}    ${WH}⇱ Limit Trojan Account ⇲     ${NC} $COLOR1 $NC"
 echo -e "$COLOR1━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo "     No  User   Expired"
 echo " Select the existing client you want to change ip"
@@ -616,7 +616,7 @@ echo " Limit Quota : $Quota GB"
 echo ""
 echo -e "$COLOR1━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo ""
-read -n 1 -s -r -p "Tekan [enter] untuk kembali ke menu"
+read -n 1 -s -r -p "Press any key to back on menu"
 m-trojan
 }
 function del-tr(){
@@ -624,18 +624,18 @@ clear
 NUMBER_OF_CLIENTS=$(grep -c -E "^#tr " "/etc/xray/config.json")
 if [[ ${NUMBER_OF_CLIENTS} == '0' ]]; then
 echo -e "$COLOR1━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-echo -e "$COLOR1 ${NC}${COLBG1}    ${WH}   Delete Trojan Account       ${NC} $COLOR1 $NC"
+echo -e "$COLOR1 ${NC}${COLBG1}    ${WH}⇱ Delete Trojan Account ⇲    ${NC} $COLOR1 $NC"
 echo -e "$COLOR1━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo ""
 echo "You have no existing clients!"
 echo ""
 echo -e "$COLOR1━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-read -n 1 -s -r -p "Tekan [enter] untuk kembali ke menu"
+read -n 1 -s -r -p "Press any key to back on menu"
 m-trojan
 fi
 clear
 echo -e "$COLOR1━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-echo -e "$COLOR1 ${NC}${COLBG1}    ${WH}   Delete Trojan Account       ${NC} $COLOR1 $NC"
+echo -e "$COLOR1 ${NC}${COLBG1}    ${WH}⇱ Delete Trojan Account ⇲    ${NC} $COLOR1 $NC"
 echo -e "$COLOR1━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo " Select the existing client you want to remove"
 echo " ketik [0] kembali kemenu"
@@ -694,7 +694,7 @@ echo " Client Name : $user"
 echo " Expired On  : $exp"
 echo -e "$COLOR1━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo ""
-read -n 1 -s -r -p "Tekan [enter] untuk kembali ke menu"
+read -n 1 -s -r -p "Press any key to back on menu"
 m-trojan
 }
 tim2sec() {
@@ -783,7 +783,7 @@ done
 fi
 echo -e "$COLOR1╰═════════════════════════════════════════════════╯${NC}"
 echo ""
-read -n 1 -s -r -p "   Tekan [enter] untuk kembali ke menu"
+read -n 1 -s -r -p "   Press any key to back on menu"
 m-trojan
 }
 function list-trojan(){
@@ -791,17 +791,17 @@ clear
 NUMBER_OF_CLIENTS=$(grep -c -E "^#tr " "/etc/xray/config.json")
 if [[ ${NUMBER_OF_CLIENTS} == '0' ]]; then
 echo -e "$COLOR1━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-echo -e "$COLOR1 ${NC}${COLBG1}    ${WH}   Config Trojan Account       ${NC} $COLOR1 $NC"
+echo -e "$COLOR1 ${NC}${COLBG1}    ${WH}⇱ Config Trojan Account ⇲    ${NC} $COLOR1 $NC"
 echo -e "$COLOR1━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo ""
 echo "You have no existing clients!"
 echo ""
 echo -e "$COLOR1━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-read -n 1 -s -r -p "Tekan [enter] untuk kembali ke menu"
+read -n 1 -s -r -p "Press any key to back on menu"
 m-trojan
 fi
 echo -e "$COLOR1━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-echo -e "$COLOR1 ${NC}${COLBG1}    ${WH}   Config Trojan Account       ${NC} $COLOR1 $NC"
+echo -e "$COLOR1 ${NC}${COLBG1}    ${WH}⇱ Config Trojan Account ⇲    ${NC} $COLOR1 $NC"
 echo -e "$COLOR1━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo " Select the existing client to view the config"
 echo " ketik [0] kembali kemenu"
@@ -834,7 +834,7 @@ else
 echo "$TEXT" > /etc/notiftele
 bash /etc/tele
 fi
-read -n 1 -s -r -p "Tekan [enter] untuk kembali ke menu"
+read -n 1 -s -r -p "Press any key to back on menu"
 m-trojan
 }
 function login-tr(){
@@ -856,7 +856,7 @@ echo -e "$COLOR1╰════════════════════�
 echo -e "$COLOR1┌───────────────────────────────────────────────┐${NC}"
 echo -e "${COLOR1}│ $NC SUCCES GANTI NOTIF LOCK JADI $notif $NC "
 echo -e "$COLOR1╰══════════════════════════════════════════╯${NC}"
-read -n 1 -s -r -p "Tekan [enter] untuk kembali ke menu"
+read -n 1 -s -r -p "Press any key to back on menu"
 m-trojan
 }
 function lock-tr(){
@@ -868,18 +868,18 @@ fi
 NUMBER_OF_CLIENTS=$(grep -c -E "^### " "/etc/trojan/listlock")
 if [[ ${NUMBER_OF_CLIENTS} == '0' ]]; then
 echo -e "$COLOR1━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-echo -e "$COLOR1 ${NC}${COLBG1}    ${WH}   Unlock Trojan Account       ${NC} $COLOR1 $NC"
+echo -e "$COLOR1 ${NC}${COLBG1}    ${WH}⇱ Unlock Trojan Account ⇲    ${NC} $COLOR1 $NC"
 echo -e "$COLOR1━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo ""
 echo "You have no existing user Lock!"
 echo ""
 echo -e "$COLOR1━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-read -n 1 -s -r -p "Tekan [enter] untuk kembali ke menu"
+read -n 1 -s -r -p "Press any key to back on menu"
 m-trojan
 fi
 clear
 echo -e "$COLOR1━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-echo -e "$COLOR1 ${NC}${COLBG1}    ${WH}   Unlock Trojan Account       ${NC} $COLOR1 $NC"
+echo -e "$COLOR1 ${NC}${COLBG1}    ${WH}⇱ Unlock Trojan Account ⇲    ${NC} $COLOR1 $NC"
 echo -e "$COLOR1━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo " Select the existing client you want to Unlock"
 echo " ketik [0] kembali kemenu"
@@ -937,7 +937,7 @@ echo " Client Name : $user"
 echo " Status  : Unlocked"
 echo -e "$COLOR1━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo ""
-read -n 1 -s -r -p "Tekan [enter] untuk kembali ke menu"
+read -n 1 -s -r -p "Press any key to back on menu"
 m-trojan
 }
 clear
@@ -951,18 +951,18 @@ clear
 NUMBER_OF_CLIENTS=$(grep -c -E "^### " "/etc/trojan/akundelete")
 if [[ ${NUMBER_OF_CLIENTS} == '0' ]]; then
 echo -e "$COLOR1━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-echo -e "$COLOR1 ${NC}${COLBG1}   ${WH}   Restore Trojan Account       ${NC} $COLOR1 $NC"
+echo -e "$COLOR1 ${NC}${COLBG1}   ${WH}⇱ Restore Trojan Account ⇲    ${NC} $COLOR1 $NC"
 echo -e "$COLOR1━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo ""
 echo "You have no existing user Expired!"
 echo ""
 echo -e "$COLOR1━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-read -n 1 -s -r -p "Tekan [enter] untuk kembali ke menu"
+read -n 1 -s -r -p "Press any key to back on menu"
 m-trojan
 fi
 clear
 echo -e "$COLOR1━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-echo -e "$COLOR1 ${NC}${COLBG1}   ${WH}   Restore Trojan Account       ${NC} $COLOR1 $NC"
+echo -e "$COLOR1 ${NC}${COLBG1}   ${WH}⇱ Restore Trojan Account ⇲    ${NC} $COLOR1 $NC"
 echo -e "$COLOR1━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo " Select the existing client you want to Restore"
 echo " ketik [0] kembali kemenu"
@@ -1047,7 +1047,7 @@ echo " EXPIRED  : $exp"
 echo " Succes to Restore"
 echo -e "$COLOR1━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo ""
-read -n 1 -s -r -p "Tekan [enter] untuk kembali ke menu"
+read -n 1 -s -r -p "Press any key to back on menu"
 m-trojan
 }
 function quota-user(){
@@ -1059,18 +1059,18 @@ fi
 NUMBER_OF_CLIENTS=$(grep -c -E "^### " "/etc/trojan/userQuota")
 if [[ ${NUMBER_OF_CLIENTS} == '0' ]]; then
 echo -e "$COLOR1━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-echo -e "$COLOR1 ${NC}${COLBG1}    ${WH}   Unlock Trojan Account       ${NC} $COLOR1 $NC"
+echo -e "$COLOR1 ${NC}${COLBG1}    ${WH}⇱ Unlock Trojan Account ⇲    ${NC} $COLOR1 $NC"
 echo -e "$COLOR1━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo ""
 echo "You have no existing user Lock!"
 echo ""
 echo -e "$COLOR1━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-read -n 1 -s -r -p "Tekan [enter] untuk kembali ke menu"
+read -n 1 -s -r -p "Press any key to back on menu"
 m-trojan
 fi
 clear
 echo -e "$COLOR1━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-echo -e "$COLOR1 ${NC}${COLBG1}    ${WH}   Unlock Trojan Account       ${NC} $COLOR1 $NC"
+echo -e "$COLOR1 ${NC}${COLBG1}    ${WH}⇱ Unlock Trojan Account ⇲    ${NC} $COLOR1 $NC"
 echo -e "$COLOR1━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo " Select the existing client you want to Unlock"
 echo " ketik [0] kembali kemenu"
@@ -1128,13 +1128,13 @@ echo " Client Name : $user"
 echo " Status  : Unlocked"
 echo -e "$COLOR1━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo ""
-read -n 1 -s -r -p "Tekan [enter] untuk kembali ke menu"
+read -n 1 -s -r -p "Press any key to back on menu"
 m-trojan
 }
 clear
 author=$(cat /etc/profil)
 echo -e " $COLOR1╭════════════════════════════════════════════════════╮${NC}"
-echo -e " $COLOR1│${NC} ${COLBG1}              ${WH} TROJAN PANEL MENU                ${NC} $COLOR1│ $NC"
+echo -e " $COLOR1│${NC} ${COLBG1}              ${WH}• TROJAN PANEL MENU •               ${NC} $COLOR1│ $NC"
 echo -e " $COLOR1╰════════════════════════════════════════════════════╯${NC}"
 echo -e " $COLOR1╭════════════════════════════════════════════════════╮${NC}"
 echo -e " $COLOR1│ $NC ${WH}[${COLOR1}01${WH}]${NC} ${COLOR1}• ${WH}ADD AKUN${NC}         ${WH}[${COLOR1}06${WH}]${NC} ${COLOR1}• ${WH}CEK USER CONFIG${NC}    $COLOR1│ $NC"
@@ -1143,6 +1143,9 @@ echo -e " $COLOR1│ $NC ${WH}[${COLOR1}03${WH}]${NC} ${COLOR1}• ${WH}RENEW AK
 echo -e " $COLOR1│ $NC ${WH}[${COLOR1}04${WH}]${NC} ${COLOR1}• ${WH}DELETE AKUN${NC}      ${WH}[${COLOR1}09${WH}]${NC} ${COLOR1}• ${WH}UNLOCK USER LOGIN${NC}  $COLOR1│ $NC"
 echo -e " $COLOR1│ $NC ${WH}[${COLOR1}05${WH}]${NC} ${COLOR1}• ${WH}CEK USER LOGIN${NC}   ${WH}[${COLOR1}10${WH}]${NC} ${COLOR1}• ${WH}UNLOCK USER QUOTA ${NC} $COLOR1│ $NC"
 echo -e " $COLOR1│ $NC ${WH}[${COLOR1}00${WH}]${NC} ${COLOR1}• ${WH}GO BACK${NC}          ${WH}[${COLOR1}11${WH}]${NC} ${COLOR1}• ${WH}RESTORE AKUN   ${NC}    $COLOR1│ $NC"
+echo -e " $COLOR1╰════════════════════════════════════════════════════╯${NC}"
+echo -e " $COLOR1╭═════════════════════════ ${WH}BY${NC} ${COLOR1}═══════════════════════╮ ${NC}"
+printf "                      ${COLOR1}%3s${NC} ${WH}%0s${NC} ${COLOR1}%3s${NC}\n" "• " "$author" " •"
 echo -e " $COLOR1╰════════════════════════════════════════════════════╯${NC}"
 echo -e ""
 echo -ne " ${WH}Select menu ${COLOR1}: ${WH}"; read opt

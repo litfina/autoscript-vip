@@ -9,14 +9,14 @@ checking_sc() {
         echo -ne
     else
         echo -e "$COLOR1╭═════════════════════════════════════════════════╮${NC}"
-        echo -e "$COLOR1 ${NC} ${COLBG1}          ${WH}  AUTOSCRIPT PREMIUM                 ${NC} $COLOR1 $NC"
+        echo -e "$COLOR1 ${NC} ${COLBG1}          ${WH}• AUTOSCRIPT PREMIUM •               ${NC} $COLOR1 $NC"
         echo -e "$COLOR1╰═════════════════════════════════════════════════╯${NC}"
         echo -e "$COLOR1╭═════════════════════════════════════════════════╮${NC}"
         echo -e "            ${RED}PERMISSION DENIED !${NC}"
         echo -e "   \033[0;33mYour VPS${NC} $ipsaya \033[0;33mHas been Banned${NC}"
         echo -e "     \033[0;33mBuy access permissions for scripts${NC}"
         echo -e "             \033[0;33mContact Your Admin ${NC}"
-        echo -e "     \033[0;36mTelegram${NC}:  https://t.me/germatunnel"
+        echo -e "     \033[0;36mTelegram${NC}:  https://t.me/diwayaa"
         echo -e "$COLOR1╰═════════════════════════════════════════════════╯${NC}"
         exit
     fi
@@ -56,7 +56,7 @@ rm -rf /etc/tele
 
 clear
 echo -e "$COLOR1╭═════════════════════════════════════════════════╮${NC}"
-echo -e "$COLOR1 ${NC} ${COLBG1}                ${WH}  BOT PANEL                    ${NC} $COLOR1 $NC"
+echo -e "$COLOR1 ${NC} ${COLBG1}                ${WH}• BOT PANEL •                  ${NC} $COLOR1 $NC"
 echo -e "$COLOR1╰═════════════════════════════════════════════════╯${NC}"
 echo -e "$COLOR1╭═════════════════════════════════════════════════╮${NC}"
 echo -e "${grenbo}Tutorial Creat Bot and ID Telegram${NC}"
@@ -139,7 +139,7 @@ wget -q -O /usr/bin/renewtrgo "https://raw.githubusercontent.com/litfina/autoscr
 
 echo "Done"
 echo " Installations complete, type /menu on your bot"
-read -n 1 -s -r -p "Tekan [enter] untuk kembali ke menu"
+read -n 1 -s -r -p "Press any key to back on menu"
 menu
 }
 cd
@@ -167,7 +167,7 @@ done
 if [[ $domain2 == "1" ]]; then
 clear
 echo -e "$COLOR1╭═════════════════════════════════════════════════╮${NC}"
-echo -e "$COLOR1 ${NC} ${COLBG1}                ${WH}  BOT PANEL                    ${NC} $COLOR1 $NC"
+echo -e "$COLOR1 ${NC} ${COLBG1}                ${WH}• BOT PANEL •                  ${NC} $COLOR1 $NC"
 echo -e "$COLOR1╰═════════════════════════════════════════════════╯${NC}"
 echo -e "$COLOR1╭═════════════════════════════════════════════════╮${NC}"
 echo -e "${grenbo}Tutorial Creat Bot and ID Telegram${NC}"
@@ -213,7 +213,7 @@ systemctl restart kyt &> /dev/null
 
 echo "Done"
 echo " Installations complete, type /menu on your bot"
-read -n 1 -s -r -p "Tekan [enter] untuk kembali ke menu"
+read -n 1 -s -r -p "Press any key to back on menu"
 menu
 fi
 if [[ $domain2 == "2" ]]; then
@@ -250,7 +250,7 @@ systemctl start kyt &> /dev/null
 systemctl restart kyt &> /dev/null
 clear
 echo -e "Succes Update BOT Telegram"
-read -n 1 -s -r -p "Tekan [enter] untuk kembali ke menu"
+read -n 1 -s -r -p "Press any key to back on menu"
 menu
 fi
 
@@ -258,14 +258,14 @@ if [[ $domain2 == "3" ]]; then
 clear
 rm -rf /usr/bin/kyt
 echo -e "Succes Delete BOT Telegram"
-read -n 1 -s -r -p "Tekan [enter] untuk kembali ke menu"
+read -n 1 -s -r -p "Press any key to back on menu"
 menu
 fi
 
 if [[ $domain2 == "4" ]]; then
 clear
 echo -e "$COLOR1╭═════════════════════════════════════════════════╮${NC}"
-echo -e "$COLOR1 ${NC} ${COLBG1}                ${WH}  BOT PANEL                    ${NC} $COLOR1 $NC"
+echo -e "$COLOR1 ${NC} ${COLBG1}                ${WH}• BOT PANEL •                  ${NC} $COLOR1 $NC"
 echo -e "$COLOR1╰═════════════════════════════════════════════════╯${NC}"
 echo -e "$COLOR1╭═════════════════════════════════════════════════╮${NC}"
 echo -e "${grenbo}Ini digunakan jika Mau memakai 1bot saja tanpa perlu ${NC}"
@@ -309,7 +309,7 @@ echo -e "Succes Ganti Nama Panggilan BOT Telegram"
 echo -e "Kalau Mau Panggil Menu botnya Ketik .${namabot} atau /${namabot}"
 echo -e "Kalau Mau Panggil Start botnya Ketik .start${namabot} atau /start${namabot}"
 systemctl restart kyt
-read -n 1 -s -r -p "Tekan [enter] untuk kembali ke menu"
+read -n 1 -s -r -p "Press any key to back on menu"
 menu
 fi
 
@@ -334,6 +334,6 @@ echo -e "Succes TAMBAH Admin BOT Telegram"
 rm -rf /usr/bin/ddsdswl.session
 rm -rf /usr/bin/kyt/database.db
 systemctl restart kyt 
-read -n 1 -s -r -p "Tekan [enter] untuk kembali ke menu"
+read -n 1 -s -r -p "Press any key to back on menu"
 menu
 fi

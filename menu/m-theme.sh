@@ -9,7 +9,7 @@ WH='\033[1;37m'
 author=$(cat /etc/profil)
 clear
 echo -e " $COLOR1╔════════════════════════════════════════════════════╗${NC}"
-echo -e " $COLOR1║${NC}${COLBG1}             ${WH}  THEMES PANEL MENU                    ${NC}$COLOR1║ $NC"
+echo -e " $COLOR1║${NC}${COLBG1}             ${WH}• THEMES PANEL MENU •                  ${NC}$COLOR1║ $NC"
 echo -e " $COLOR1╚════════════════════════════════════════════════════╝${NC}"
 echo -e " $COLOR1╔════════════════════════════════════════════════════╗${NC}"
 echo -e " $COLOR1║$NC ${WH}[${COLOR1}01${WH}]$NC ${COLOR1}• ${WH}COLOR RED         ${WH}[${COLOR1}08${WH}]$NC ${COLOR1}• ${WH}COLOR LIGHT RED$NC$COLOR1    ║$NC"
@@ -106,5 +106,5 @@ m-theme
 ;;
 esac
 echo -e ""
-read -n 1 -s -r -p "  Tekan [enter] untuk kembali ke menu"
+read -n 1 -s -r -p "  Press any key to back on menu"
 menu

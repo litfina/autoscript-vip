@@ -1,7 +1,4 @@
 #!/bin/bash
-CYAN="\033[96m"
-BG="\E[40;1;46m"
-w="\e[0;97m"
 biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
 MYIP=$(wget -qO- ifconfig.me)
 colornow=$(cat /etc/rmbl/theme/color.conf)
@@ -30,7 +27,7 @@ echo -ne
 else
 systemctl stop nginx
 echo -e "$COLOR1╭═════════════════════════════════════════════════╮${NC}"
-echo -e "$COLOR1│${NC}${COLBG1}          ${WH}  AUTOSCRIPT PREMIUM                   ${NC}$COLOR1│ $NC"
+echo -e "$COLOR1│${NC}${COLBG1}          ${WH}• AUTOSCRIPT PREMIUM •                 ${NC}$COLOR1│ $NC"
 echo -e "$COLOR1╰═════════════════════════════════════════════════╯${NC}"
 echo -e "$COLOR1╭═════════════════════════════════════════════════╮${NC}"
 echo -e "$COLOR1│            ${RED}PERMISSION DENIED !${NC}                  $COLOR1│"
@@ -219,9 +216,9 @@ if [[ -e /etc/github/api ]]; then
 m-ip
 else
 mkdir /etc/github
-echo "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" > /etc/github/api
-echo "hackername349@gmail.com" > /etc/github/email
-echo "anggrevps" > /etc/github/username
+echo "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" > /etc/github/api
+echo "encitgtg1@gmail.com" > /etc/github/email
+echo "litfina" > /etc/github/username
 m-ip
 fi
 }
@@ -293,39 +290,42 @@ clear
 clear && clear && clear
 clear;clear;clear
 echo -e " $COLOR1╭══════════════════════════════════════════════════════════╮${NC}"
-echo -e " $COLOR1│${NC} ${COLBG1}               ${WH}          GERMA-XD                       ${NC} $COLOR1│ $N"
+echo -e " $COLOR1│${NC} ${COLBG1}               ${WH} • GOD  STORES  PREMIUM •             ${NC} $COLOR1│ $NC"
 echo -e " $COLOR1╰══════════════════════════════════════════════════════════╯${NC}"
 echo -e " $COLOR1╭══════════════════════════════════════════════════════════╮${NC}"
-echo -e " $COLOR1│$NC${WH} • OS            ${COLOR1}: ${WH}$MODEL2${NC}"
-echo -e " $COLOR1│$NC${WH} • RAM           ${COLOR1}: ${WH}$tram / $uram MB${NC}"
-echo -e " $COLOR1│$NC${WH} • DATE          ${COLOR1}: ${WH}$DATE2 WIB${NC}"
-echo -e " $COLOR1│$NC${WH} • UPTIME        ${COLOR1}: ${WH}$uphours $upminutes $uptimecek"
-echo -e " $COLOR1│$NC${WH} • ISP           ${COLOR1}: ${WH}$ISP${NC}"
-echo -e " $COLOR1│$NC${WH} • CITY          ${COLOR1}: ${WH}$CITY${NC}"
-echo -e " $COLOR1│$NC${WH} • IP VPS        ${COLOR1}: ${WH}$MYIP${NC}"
-echo -e " $COLOR1│$NC${WH} • DOMAIN        ${COLOR1}: ${WH}$(cat /etc/xray/domain)"
+echo -e " $COLOR1│$NC${WH} ❈ OS            ${COLOR1}: ${WH}$MODEL2${NC}"
+echo -e " $COLOR1│$NC${WH} ❈ RAM           ${COLOR1}: ${WH}$tram / $uram MB${NC}"
+echo -e " $COLOR1│$NC${WH} ❈ DATE          ${COLOR1}: ${WH}$DATE2 WIB${NC}"
+echo -e " $COLOR1│$NC${WH} ❈ UPTIME        ${COLOR1}: ${WH}$uphours $upminutes $uptimecek"
+echo -e " $COLOR1│$NC${WH} ❈ ISP           ${COLOR1}: ${WH}$ISP${NC}"
+echo -e " $COLOR1│$NC${WH} ❈ City          ${COLOR1}: ${WH}$CITY${NC}"
+echo -e " $COLOR1│$NC${WH} ❈ IP VPS        ${COLOR1}: ${WH}$MYIP${NC}"
+echo -e " $COLOR1│$NC${WH} ❈ DOMAIN        ${COLOR1}: ${WH}$(cat /etc/xray/domain)"
+echo -e " $COLOR1│$NC${WH} ❈ NSDomain      ${COLOR1}: ${WH}$(cat /etc/xray/dns)"
 echo -e " $COLOR1╰══════════════════════════════════════════════════════════╯${NC}"
-echo -e "    $COLOR1═══════════════════════════════════════════════════════${NC}"
+echo -e "    $COLOR1╭═════════════════ • ${NC}${WH}STATUS SERVER${NC}${COLOR1} • ═══════════════╮${NC}"
 echo -e "     ${WH} SSH WS : ${status_ws} ${WH} XRAY : ${status_xray} ${WH} NGINX : ${status_nginx} ${WH} DROPBEAR : ${status_beruangjatuh}$NC"
-echo -e "             ${WH} NOOBZVPNS : ${stat_noobz} ${WH} TROJAN-GO : ${stat_trgo} ${NC}"
-echo -e "    $COLOR1  ═══════════════════════════════════════════════════${NC}"
-echo -e " $COLOR1         ═════════════════════════════════════════${NC}"
-echo -e "             ${w}       SSH/OVPN/UDP     $w:$w $total_ssh${w}"
-echo -e "             ${w}       VMESS/WS/GRPC    $w:$w $vmess${w}"
-echo -e "             ${w}       VLESS/WS/GRPC    $w:$w $vless${w}"  
-echo -e "             ${w}       TROJAN/WS/GRPC   $w:$w $trtls${w}"  
-echo -e "             ${w}       NOOBZVPN         $w:$w $jumlah_noobz${w}"
-echo -e "             ${w}       TORJAN-GO        $w:$w $jumlah_trgo${w}"
-echo -e " $COLOR1            ════════════════════════════════════${NC}"
-echo -e " $COLOR1                    ════════════════════${NC}"
-echo -e " $COLOR1╭════════════════════════════════════════════════════════╮${NC}"
-echo -e " $COLOR1│$NC ${WH}[${COLOR1}01${WH}]${NC} ${COLOR1} ${WH}[${COLOR1}Menu${WH}]  ${WH}SSH        ${NC} $COLOR1│${NC}  ${WH}[${COLOR1}05${WH}]${NC} ${COLOR1}  ${WH}[${COLOR1}Menu${WH}] ${WH}NOOBZVPN    $COLOR1│${NC}"
-echo -e " $COLOR1│$NC ${WH}[${COLOR1}02${WH}]${NC} ${COLOR1} ${WH}[${COLOR1}Menu${WH}]  ${WH}VMESS      ${NC} $COLOR1│${NC}  ${WH}[${COLOR1}06${WH}]${NC} ${COLOR1}  ${WH}[${COLOR1}Menu${WH}] ${WH}TORJAN-GO   $COLOR1│${NC}"    
-echo -e " $COLOR1│$NC ${WH}[${COLOR1}03${WH}]${NC} ${COLOR1} ${WH}[${COLOR1}Menu${WH}]  ${WH}VLESS      ${NC} $COLOR1│${NC}  ${WH}[${COLOR1}07${WH}]${NC} ${COLOR1}  ${WH}[${COLOR1}Menu${WH}] ${WH}UPDATE      $COLOR1│${NC}"   
-echo -e " $COLOR1│$NC ${WH}[${COLOR1}04${WH}]${NC} ${COLOR1} ${WH}[${COLOR1}Menu${WH}]  ${WH}TROJAN     ${NC} $COLOR1│${NC}  ${WH}[${COLOR1}08${WH}]${NC} ${COLOR1}  ${WH}[${COLOR1}Menu${WH}] ${WH}SYSTEM      $COLOR1│${NC}"
+echo -e "      ${WH} UDP CUSTOM : ${status_udp} ${WH} NOOBZVPNS : ${stat_noobz} ${WH} TROJAN-GO : ${stat_trgo} ${NC}"
+echo -e "    $COLOR1╰═══════════════════════════════════════════════════╯${NC}"
+echo -e "       $COLOR1╭════════════ •${NC} ${WH}ACCOUNT PREMIUM${NC} $COLOR1• ════════════╮${NC}"
+printf "                \033[1;37m%-16s ${COLOR1}%-4s${NC} ${WH}%-5s\e[0m\n" " SSH/OPVPN   =" "$total_ssh" "ACCOUNT "
+printf "                \033[1;37m%-16s ${COLOR1}%-4s${NC} ${WH}%-5s\e[0m\n" " VMESS/WS    =" "$vmess" "ACCOUNT "
+printf "                \033[1;37m%-16s ${COLOR1}%-4s${NC} ${WH}%-5s\e[0m\n" " VLESS/WS    =" "$vless" "ACCOUNT "
+printf "                \033[1;37m%-16s ${COLOR1}%-4s${NC} ${WH}%-5s\e[0m\n" " TROJAN/GRPC =" "$trtls" "ACCOUNT "
+printf "                \033[1;37m%-16s ${COLOR1}%-4s${NC} ${WH}%-5s\e[0m\n" " NOOBZVPNS   =" "$jumlah_noobz" "ACCOUNT "
+printf "                \033[1;37m%-16s ${COLOR1}%-4s${NC} ${WH}%-5s\e[0m\n" " TROJAN-GO   =" "$jumlah_trgo" "ACCOUNT "
+echo -e "      $COLOR1╰═════════════════════════════════════════════╯${NC}"
+echo -e " $COLOR1╭═════════════════════ • ${WH}LIST MENU${NC}${COLOR1} • ════════════════════╮${NC}"
+echo -e " $COLOR1│$NC ${WH}[${COLOR1}01${WH}]${NC} ${COLOR1}• ${WH}SSH-WS    ${WH}[${COLOR1}Menu${WH}]   ${NC} $COLOR1│${NC}  ${WH}[${COLOR1}07${WH}]${NC} ${COLOR1}• ${WH}BOT PANEL  ${WH}[${COLOR1}Menu${WH}] $COLOR1│${NC}"
+echo -e " $COLOR1│$NC ${WH}[${COLOR1}02${WH}]${NC} ${COLOR1}• ${WH}VMESS     ${WH}[${COLOR1}Menu${WH}]   ${NC} $COLOR1│${NC}  ${WH}[${COLOR1}08${WH}]${NC} ${COLOR1}• ${WH}BOT NOTIF  ${WH}[${COLOR1}Menu${WH}] $COLOR1│${NC}"    
+echo -e " $COLOR1│$NC ${WH}[${COLOR1}03${WH}]${NC} ${COLOR1}• ${WH}VLESS     ${WH}[${COLOR1}Menu${WH}]   ${NC} $COLOR1│${NC}  ${WH}[${COLOR1}09${WH}]${NC} ${COLOR1}• ${WH}UPDATE     ${WH}[${COLOR1}Menu${WH}] $COLOR1│${NC}"   
+echo -e " $COLOR1│$NC ${WH}[${COLOR1}04${WH}]${NC} ${COLOR1}• ${WH}TROJAN    ${WH}[${COLOR1}Menu${WH}]   ${NC} $COLOR1│${NC}  ${WH}[${COLOR1}10${WH}]${NC} ${COLOR1}• ${WH}SYSTEM     ${WH}[${COLOR1}Menu${WH}] $COLOR1│${NC}" 
+echo -e " $COLOR1│$NC ${WH}[${COLOR1}05${WH}]${NC} ${COLOR1}• ${WH}NOOBZVPNS ${WH}[${COLOR1}Menu${WH}]   ${NC} $COLOR1│${NC}  ${WH}[${COLOR1}11${WH}]${NC} ${COLOR1}• ${WH}BACKUP     ${WH}[${COLOR1}Menu${WH}] $COLOR1│${NC}" 
+echo -e " $COLOR1│$NC ${WH}[${COLOR1}06${WH}]${NC} ${COLOR1}• ${WH}TROJAN-GO ${WH}[${COLOR1}Menu${WH}]   ${NC} $COLOR1│${NC}  ${WH}[${COLOR1}12${WH}]${NC} ${COLOR1}• ${WH}REBOOT     ${WH}[${COLOR1}Menu${WH}] $COLOR1│${NC}" 
+echo -e " $COLOR1│$NC ${WH}[${COLOR1}22${WH}]${NC} ${COLOR1}• ${WH}RUNNING   ${WH}[${COLOR1}Menu${WH}]   ${NC} $COLOR1│${NC}  ${WH}[${COLOR1}23${WH}]${NC} ${COLOR1}• ${WH}RESTART    ${WH}[${COLOR1}Menu${WH}] $COLOR1│${NC}"
 echo -e " $COLOR1╰════════════════════════════════════════════════════════╯${NC}"
-echo -e "$COLOR1╭═════════════════════════════════════════════════════════╮${NC}"
-echo -e "$COLOR1│  ${WH}[${COLOR1}09${WH}]${NC} ${COLOR1}• ${WH}ADD IP ${WH}[${COLOR1}RESELLER ONLY${WH}] $NC"
+echo -e "$COLOR1╭════════════════════ • ${WH}PANEL ADMIN VIP${NC}${COLOR1} • ════════════════╮${NC}"
+echo -e "$COLOR1│  ${WH}[${COLOR1}13${WH}]${NC} ${COLOR1}• ${WH}RESELLER IP ${WH}[${COLOR1}MENU${WH}] $NC"
 echo -e "$COLOR1╰═════════════════════════════════════════════════════════╯${NC}"
 echo -e "$COLOR1╭═════════════════════════════════════════════════════════╮${NC}"
 echo -e "$COLOR1│$NC  ${WH}Total    $COLOR1│${NC}     ${WH}Today       ${WH}Yesterday       ${WH}Month         ${NC}"
@@ -335,7 +335,7 @@ DATE=$(date +'%Y-%m-%d')
 datediff() {
 d1=$(date -d "$1" +%s)
 d2=$(date -d "$2" +%s)
-echo -e "$COLOR1 $NC Expired In   : $(( (d1 - d2) / 86400 )) Days"
+echo -e "$COLOR1 $NC Expiry In   : $(( (d1 - d2) / 86400 )) Days"
 }
 function new(){
 cat> /etc/cron.d/autocpu << END
@@ -406,24 +406,24 @@ echo -e "  \033[1;91m Restart All Service... \033[1;37m"
 fun_bar 'res1'
 
 echo -e ""
-read -n 1 -s -r -p "TEKAN [ Enter ] untuk kembali ke menu"
+read -n 1 -s -r -p "Press [ Enter ] to back on menu"
 menu
 }
 function updatews(){
 cd
 rm -rf *
-wget https://raw.githubusercontent.com/litfina/stt/main/m-update.sh
+wget https://raw.githubusercontent.com/litfina/autoscript-vip/main/m-update.sh
 clear
 chmod +x m-update.sh && ./m-update.sh
 }
 echo -e "$COLOR1╭═════════════════════════════════════════════════════════╮${NC}"
-echo -e "$COLOR1│$NC ${WH} • Versi     ${NC}: ${WH}$(cat /opt/.ver) Version${NC}"
-echo -e "$COLOR1│$NC ${WH} • Nama ${NC}     : ${WH}$author${NC}"
-echo -e "$COLOR1│$NC ${WH} • Durasi ${NC}   : ${WH}$certificate hari${NC}"
-echo -e "$COLOR1│$NC ${WH} • Expired ${NC}  : ${WH}$Exp2 $sts ${NC}"
+echo -e "$COLOR1│$NC ${WH} ❈ Versi   ${NC}: ${WH}$(cat /opt/.ver) Version${NC}"
+echo -e "$COLOR1│$NC ${WH} ❈ Client ${NC} : ${WH}$author${NC}"
+echo -e "$COLOR1│$NC ${WH} ❈ Durasi ${NC} : ${WH}$certificate hari${NC}"
+echo -e "$COLOR1│$NC ${WH} ❈ Expiry ${NC} : ${WH}$Exp2 $sts ${NC}"
 echo -e "$COLOR1╰═════════════════════════════════════════════════════════╯${NC}"
 echo -e ""
-echo -ne " ${WH}PILIH menu ${COLOR1}: ${WH}"; read opt
+echo -ne " ${WH}Select menu ${COLOR1}: ${WH}"; read opt
 case $opt in
 01 | 1) clear ; m-sshovpn ;;
 02 | 2) clear ; m-vmess ;;
@@ -431,9 +431,15 @@ case $opt in
 04 | 4) clear ; m-trojan ;;
 05 | 5) clear ; m-noobz ;;
 06 | 6) clear ; m-trgo ;;
-07 | 7) clear ; updatews;;
-08 | 8) clear ; m-system  ;;
-09 | 9) clear ; m-ip2 ;;
+07 | 7) clear ; m-bot  ;;
+08 | 8) clear ; m-bot2 ;;
+09 | 9) clear ; updatews ;;
+10 | 10) clear ; m-system ;;
+11 | 11) clear ; m-backup;;
+12 | 12) clear ; reboot ;;
+13 | 13) clear ; m-ip2 ;;
+22 | 22) clear ; running;;
+23 | 23) clear ; restartservice ;;
 00 | 0) clear ; menu ;;
 *) clear ; menu ;;
 esac

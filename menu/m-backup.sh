@@ -17,7 +17,7 @@ if [[ $date_list < $useexp ]]; then
 echo -ne
 else
 echo -e "$COLOR1╭═════════════════════════════════════════════════╮${NC}"
-echo -e "$COLOR1 ${NC} ${COLBG1}          ${WH}  AUTOSCRIPT PREMIUM                 ${NC} $COLOR1 $NC"
+echo -e "$COLOR1 ${NC} ${COLBG1}          ${WH}• AUTOSCRIPT PREMIUM •               ${NC} $COLOR1 $NC"
 echo -e "$COLOR1╰═════════════════════════════════════════════════╯${NC}"
 echo -e "$COLOR1╭═════════════════════════════════════════════════╮${NC}"
 echo -e "            ${RED}PERMISSION DENIED !${NC}"
@@ -238,7 +238,7 @@ rm -rf /etc/cron.d/autobackup
 rm -rf /etc/jam
 echo -e  "Sukses OFF Auto Backup"
 echo " "
-read -n 1 -s -r -p "Tekan [enter] untuk kembali ke menu"
+read -n 1 -s -r -p "Press any key to back on menu"
 menu
 clear
 elif [[ $bot == "2" ]]; then
@@ -258,7 +258,7 @@ jam2
 elif [[ $bott == "2" ]]; then
 jam
 fi
-read -n 1 -s -r -p "Tekan [enter] untuk kembali ke menu"
+read -n 1 -s -r -p "Press any key to back on menu"
 menu
 clear
 }
@@ -281,7 +281,7 @@ fi
 clear
 author=$(cat /etc/profil)
 echo -e "$COLOR1╭═════════════════════════════════════════════════╮${NC}"
-echo -e "$COLOR1 ${NC} ${COLBG1}             ${WH}  BACKUP PANEL MENU              ${NC} $COLOR1 $NC"
+echo -e "$COLOR1 ${NC} ${COLBG1}             ${WH}• BACKUP PANEL MENU •             ${NC} $COLOR1 $NC"
 echo -e "$COLOR1╰═════════════════════════════════════════════════╯${NC}"
 echo -e " $COLOR1╭═══════════════════════════════════════════════╮${NC}"
 echo -e " $COLOR1 $NC   ${WH}[${COLOR1}01${WH}]${NC} ${COLOR1}• ${WH}RESTORE VPS/TELE BOT $COLOR1 $NC"
@@ -294,8 +294,11 @@ echo -e " $COLOR1 $NC   ${WH}[${COLOR1}04${WH}]${NC} ${COLOR1}• ${WH}SET JAM A
 echo -e " $COLOR1 $NC                                               $COLOR1 $NC"
 echo -e " $COLOR1 $NC   ${WH}[${COLOR1}00${WH}]${NC} ${COLOR1}• ${WH}GO BACK${NC}                              $COLOR1 $NC"
 echo -e " $COLOR1╰═════════════════════════════════════════════════╯${NC}"
+echo -e "$COLOR1┌────────────────────── ${WH}BY${NC} ${COLOR1}───────────────────────┐${NC}"
+echo -e "$COLOR1 ${NC}                ${WH}• $author •${NC}                 $COLOR1 $NC"
+echo -e "$COLOR1╰═════════════════════════════════════════════════╯${NC}"
 echo -e ""
-echo -ne " ${WH}PILIH menu ${COLOR1}: ${WH}"; read opt
+echo -ne " ${WH}Select menu ${COLOR1}: ${WH}"; read opt
 echo -e ""
 case $opt in
 01 | 1) clear ; restore ;;
@@ -305,5 +308,5 @@ case $opt in
 00 | 0) clear ; menu ;;
 *) clear ; menu-backup ;;
 x) exit ;;
-*) echo -e "" ; echo "Tekan [enter] untuk kembali ke menu" ; sleep 1 ; menu ;;
+*) echo -e "" ; echo "Press any key to back on menu" ; sleep 1 ; menu ;;
 esac

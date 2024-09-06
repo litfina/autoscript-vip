@@ -17,7 +17,7 @@ echo -ne
 else
 systemctl stop nginx
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}${COLBG1}          ${WH}  AUTOSCRIPT PREMIUM                   ${NC}$COLOR1│ $NC"
+echo -e "$COLOR1│${NC}${COLBG1}          ${WH}• AUTOSCRIPT PREMIUM •                 ${NC}$COLOR1│ $NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
 echo -e "$COLOR1│            ${RED}PERMISSION DENIED !${NC}                  $COLOR1│"
@@ -79,5 +79,5 @@ rm -r /root/$IP-$date.zip &> /dev/null
 rm -f /root/$IP.zip &> /dev/null
 echo " Please Check Your BOT"
 echo -e ""
-read -n 1 -s -r -p "Tekan [enter] untuk kembali ke menu"
+read -n 1 -s -r -p "Press any key to back on menu"
 menu

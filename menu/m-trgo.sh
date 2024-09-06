@@ -173,7 +173,7 @@ echo -e "$COLOR1 ◇━━━━━━━━━━━━━━━━━━━◇
 echo -e "$WH Link TrGo TLS  : ${linktls} $NC"
 echo -e "$COLOR1 ◇━━━━━━━━━━━━━━━━━━━◇$NC"
 echo -e ""
-read -n 1 -s -r -p "Tekan [enter] untuk kembali ke menu"
+read -n 1 -s -r -p "Press any key to back on menu"
 menu
 }
 
@@ -215,7 +215,7 @@ echo "Username : $user"
 echo "Expired  : $exp"
 echo "============================"
 echo -e ""
-read -n 1 -s -r -p "Tekan [enter] untuk kembali ke menu"
+read -n 1 -s -r -p "Press any key to back on menu"
 m-trgo
 }
 
@@ -322,18 +322,21 @@ done
 rm -rf /tmp/other.txt
 echo -e "$COLOR1╰═══════════════════════════════════════════════════╯${NC}"
 echo ""
-read -n 1 -s -r -p "Tekan [enter] untuk kembali ke menu"
+read -n 1 -s -r -p "Press any key to back on menu"
 m-trgo
 }
 
 clear
 echo -e "$COLOR1╭═══════════════════════════════════════════════════╮${NC}"
-echo -e "$COLOR1│ ${NC}${COLBG1}              ${WH}  TROJAN-GO PANEL MENU             ${NC}$COLOR1 │ $NC"
+echo -e "$COLOR1│ ${NC}${COLBG1}              ${WH}• TROJAN-GO PANEL MENU •           ${NC}$COLOR1 │ $NC"
 echo -e "$COLOR1╰═══════════════════════════════════════════════════╯${NC}"
 echo -e "$COLOR1╭═══════════════════════════════════════════════════╮${NC}"
 echo -e "$COLOR1│ $NC  ${WH}[${COLOR1}01${WH}]${NC} ${COLOR1}• ${WH}ADD TRGO${NC}      ${WH}[${COLOR1}03${WH}]${NC} ${COLOR1}• ${WH}RENEW AKUN${NC}    $COLOR1 $NC"
 echo -e "$COLOR1│ $NC  ${WH}[${COLOR1}02${WH}]${NC} ${COLOR1}• ${WH}DELETE TRGO${NC}   ${WH}[${COLOR1}04${WH}]${NC} ${COLOR1}• ${WH}CHECK USER${NC}    $COLOR1 $NC"
 echo -e "$COLOR1│ $NC  ${WH}[${COLOR1}00${WH}]${NC} ${COLOR1}• ${WH}BACK ${NC}"
+echo -e "$COLOR1╰═══════════════════════════════════════════════════╯${NC}"
+echo -e "$COLOR1╭═════════════════════ • ${WH}BY${NC}${COLOR1} • ══════════════════════╮${NC}"
+printf "                      ${COLOR1}%3s${NC} ${WH}%0s${NC} ${COLOR1}%3s${NC}\n" "• " "$author" " •"
 echo -e "$COLOR1╰═══════════════════════════════════════════════════╯${NC}"
 echo -e ""
 echo -ne " ${WH}Select menu ${COLOR1}: ${WH}"; read opt

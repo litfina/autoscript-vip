@@ -16,7 +16,7 @@ if [[ $date_list < $useexp ]]; then
 echo -ne
 else
 echo -e "$COLOR1╭═════════════════════════════════════════════════╮${NC}"
-echo -e "$COLOR1│${NC} ${COLBG1}         ${WH}  AUTOSCRIPT PREMIUM                  ${NC} $COLOR1│ $NC"
+echo -e "$COLOR1│${NC} ${COLBG1}         ${WH}• AUTOSCRIPT PREMIUM •                ${NC} $COLOR1│ $NC"
 echo -e "$COLOR1╰═════════════════════════════════════════════════╯${NC}"
 echo -e "$COLOR1╭═════════════════════════════════════════════════╮${NC}"
 echo -e "$COLOR1│            ${RED}PERMISSION DENIED !${NC}                  │"
@@ -57,7 +57,7 @@ CITY=$(cat /etc/xray/city)
 author=$(cat /etc/profil)
 clear
 echo -e "$COLOR1╭═════════════════════════════════════════════════╮${NC}"
-echo -e "$COLOR1│${NC} ${COLBG1}              ${WH}  SSH PANEL MENU                 ${NC} $COLOR1│ $NC"
+echo -e "$COLOR1│${NC} ${COLBG1}              ${WH}• SSH PANEL MENU •               ${NC} $COLOR1│ $NC"
 echo -e "$COLOR1╰═════════════════════════════════════════════════╯${NC}"
 until [[ $Login =~ ^[a-zA-Z0-9_.-]+$ && ${CLIENT_EXISTS} == '0' ]]; do
 read -p "Username : " Login
@@ -65,7 +65,7 @@ CLIENT_EXISTS=$(grep -w $Login /etc/xray/ssh | wc -l)
 if [[ ${CLIENT_EXISTS} == '1' ]]; then
 clear
 echo -e "$COLOR1╭═════════════════════════════════════════════════╮${NC}"
-echo -e "$COLOR1│${NC} ${COLBG1}              ${WH}  SSH PANEL MENU                 ${NC} $COLOR1│ $NC"
+echo -e "$COLOR1│${NC} ${COLBG1}              ${WH}• SSH PANEL MENU •               ${NC} $COLOR1│ $NC"
 echo -e "$COLOR1╰═════════════════════════════════════════════════╯${NC}"
 echo -e "$COLOR1╭═════════════════════════════════════════════════╮${NC}"
 echo -e "$COLOR1│                                                 │"
@@ -259,7 +259,7 @@ TEXT2="
 curl -s --max-time $TIMES -d "chat_id=$CHATID2&disable_web_page_preview=1&text=$TEXT2&parse_mode=html" $URL2 >/dev/null
 clear
 echo -e "$COLOR1 ◇━━━━━━━━━━━━━━━━━◇ ${NC}" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
-echo -e "$COLOR1 ${NC} ${WH}  SSH Premium Account    " | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
+echo -e "$COLOR1 ${NC} ${WH}• SSH Premium Account  • " | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
 echo -e "$COLOR1 ◇━━━━━━━━━━━━━━━━━◇ ${NC}" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
 echo -e "$COLOR1 $NC  ${WH}Username   ${COLOR1}: ${WH}$Login"  | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
 echo -e "$COLOR1 $NC  ${WH}Password   ${COLOR1}: ${WH}$Pass" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
@@ -300,7 +300,7 @@ echo -e "$COLOR1 ◇━━━━━━━━━━━━━━━━━◇ ${NC}
 echo -e "$COLOR1 ${NC}    ${WH}• $author •${NC}                 $COLOR1 $NC" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
 echo -e "$COLOR1 ◇━━━━━━━━━━━━━━━━━◇ ${NC}" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
 echo "" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
-read -n 1 -s -r -p "Tekan [enter] untuk kembali ke menu"
+read -n 1 -s -r -p "Press any key to back on menu"
 menu
 }
 function trial(){
@@ -319,7 +319,7 @@ clear
 IP=$(curl -sS ifconfig.me)
 cd
 echo -e "$COLOR1╭═════════════════════════════════════════════════╮${NC}"
-echo -e "$COLOR1│${NC} ${COLBG1}           ${WH}  TRIAL SSH Account                 ${NC} $COLOR1│ $NC"
+echo -e "$COLOR1│${NC} ${COLBG1}           ${WH}• TRIAL SSH Account •               ${NC} $COLOR1│ $NC"
 echo -e "$COLOR1╰═════════════════════════════════════════════════╯${NC}"
 echo -e ""
 until [[ $timer =~ ^[0-9]+$ ]]; do
@@ -492,7 +492,7 @@ PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 EOF
 clear
 echo -e "$COLOR1 ◇━━━━━━━━━━━━━━━━━◇ ${NC}" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
-echo -e "$COLOR1 ${NC} ${WH}  Trial SSH Premium Account   " | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
+echo -e "$COLOR1 ${NC} ${WH}• Trial SSH Premium Account • " | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
 echo -e "$COLOR1 ◇━━━━━━━━━━━━━━━━━◇ ${NC}" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
 echo -e "$COLOR1 $NC  ${WH}Username   ${COLOR1}: ${WH}$Login"  | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
 echo -e "$COLOR1 $NC  ${WH}Password   ${COLOR1}: ${WH}$Pass" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
@@ -533,7 +533,7 @@ echo -e "$COLOR1 ◇━━━━━━━━━━━━━━━━━◇ ${NC}
 echo -e "$COLOR1 ${NC}    ${WH}• $author •${NC}                 $COLOR1 $NC" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
 echo -e "$COLOR1 ◇━━━━━━━━━━━━━━━━━◇ ${NC}" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
 echo "" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
-read -n 1 -s -r -p "Tekan [enter] untuk kembali ke menu"
+read -n 1 -s -r -p "Press any key to back on menu"
 menu
 }
 function renew(){
@@ -549,7 +549,7 @@ NUMBER_OF_CLIENTS=$(grep -c -E "^### " "/etc/xray/ssh")
 if [[ ${NUMBER_OF_CLIENTS} == '0' ]]; then
 clear
 echo -e "$COLOR1╭═════════════════════════════════════════════════╮${NC}"
-echo -e "$COLOR1│${NC} ${COLBG1}             ${WH}  RENEW USERS                      │${NC}$COLOR1$NC"
+echo -e "$COLOR1│${NC} ${COLBG1}             ${WH}• RENEW USERS •                    │${NC}$COLOR1$NC"
 echo -e "$COLOR1╰═════════════════════════════════════════════════╯${NC}"
 echo -e "$COLOR1╭═════════════════════════════════════════════════╮${NC}"
 echo -e "$COLOR1│                                                 │"
@@ -557,11 +557,11 @@ echo -e "$COLOR1│${WH} User Tidak Ada!                              $COLOR1   
 echo -e "$COLOR1│                                                 │"
 echo -e "$COLOR1╰═════════════════════════════════════════════════╯${NC}"
 echo ""
-read -n 1 -s -r -p "Tekan [enter] untuk kembali ke menu"
+read -n 1 -s -r -p "Press any key to back on menu"
 m-sshovpn
 fi
 echo -e "$COLOR1╭═════════════════════════════════════════════════╮${NC}"
-echo -e "$COLOR1│${NC} ${COLBG1}             ${WH}  RENEW USERS                      │${NC}$COLOR1$NC"
+echo -e "$COLOR1│${NC} ${COLBG1}             ${WH}• RENEW USERS •                    │${NC}$COLOR1$NC"
 echo -e "$COLOR1╰═════════════════════════════════════════════════╯${NC}"
 echo -e "$COLOR1╭═════════════════════════════════════════════════╮${NC}"
 echo -e "$COLOR1│ ${WH}Silahkan Pilih User Yang Mau di Renew$COLOR1           │"
@@ -632,7 +632,7 @@ TEXT2="
 curl -s --max-time $TIMES -d "chat_id=$CHATID2&disable_web_page_preview=1&text=$TEXT2&parse_mode=html" $URL2 >/dev/null
 clear
 echo -e "$COLOR1╭═════════════════════════════════════════════════╮${NC}"
-echo -e "$COLOR1│${NC} ${COLBG1}             ${WH}  RENEW USERS                      │${NC}$COLOR1$NC"
+echo -e "$COLOR1│${NC} ${COLBG1}             ${WH}• RENEW USERS •                    │${NC}$COLOR1$NC"
 echo -e "$COLOR1╰═════════════════════════════════════════════════╯${NC}"
 echo -e "$COLOR1╭═════════════════════════════════════════════════╮${NC}"
 echo -e "$COLOR1│"
@@ -642,7 +642,7 @@ echo -e "$COLOR1│ ${WH}Expired on : $exp4"
 echo -e "$COLOR1│"
 echo -e "$COLOR1╰═════════════════════════════════════════════════╯${NC}"
 fi
-read -n 1 -s -r -p "Tekan [enter] untuk kembali ke menu"
+read -n 1 -s -r -p "Press any key to back on menu"
 m-sshovpn
 }
 function hapus(){
@@ -650,7 +650,7 @@ NUMBER_OF_CLIENTS=$(grep -c -E "^### " "/etc/xray/ssh")
 if [[ ${NUMBER_OF_CLIENTS} == '0' ]]; then
 clear
 echo -e "$COLOR1╭═════════════════════════════════════════════════╮${NC}"
-echo -e "$COLOR1│${NC} ${COLBG1}             ${WH}  DELETE USERS                     │${NC}$COLOR1$NC"
+echo -e "$COLOR1│${NC} ${COLBG1}             ${WH}• DELETE USERS •                   │${NC}$COLOR1$NC"
 echo -e "$COLOR1╰═════════════════════════════════════════════════╯${NC}"
 echo -e "$COLOR1╭═════════════════════════════════════════════════╮${NC}"
 echo -e "$COLOR1│                                                 │"
@@ -658,11 +658,11 @@ echo -e "$COLOR1│${WH} User Tidak Ada!                              $COLOR1   
 echo -e "$COLOR1│                                                 │"
 echo -e "$COLOR1╰═════════════════════════════════════════════════╯${NC}"
 echo ""
-read -n 1 -s -r -p "Tekan [enter] untuk kembali ke menu"
+read -n 1 -s -r -p "Press any key to back on menu"
 m-sshovpn
 fi
 echo -e "$COLOR1╭═════════════════════════════════════════════════╮${NC}"
-echo -e "$COLOR1│${NC} ${COLBG1}             ${WH}  DELETE USERS                     │${NC}$COLOR1$NC"
+echo -e "$COLOR1│${NC} ${COLBG1}             ${WH}• DELETE USERS •                   │${NC}$COLOR1$NC"
 echo -e "$COLOR1╰═════════════════════════════════════════════════╯${NC}"
 echo -e "$COLOR1╭═════════════════════════════════════════════════╮${NC}"
 echo -e "$COLOR1│ ${WH}Silahkan Pilih User Yang Mau Didelete     $COLOR1      │"
@@ -711,7 +711,7 @@ else
 echo "$TEXT" > /etc/notiftele
 bash /etc/tele
 fi
-read -n 1 -s -r -p "Tekan [enter] untuk kembali ke menu"
+read -n 1 -s -r -p "Press any key to back on menu"
 m-sshovpn
 }
 function cekconfig(){
@@ -726,7 +726,7 @@ NUMBER_OF_CLIENTS=$(grep -c -E "^### " "/etc/xray/ssh")
 if [[ ${NUMBER_OF_CLIENTS} == '0' ]]; then
 clear
 echo -e "$COLOR1╭═════════════════════════════════════════════════╮${NC}"
-echo -e "$COLOR1│${NC} ${COLBG1}             ${WH}  USER CONFIG                      │${NC}$COLOR1$NC"
+echo -e "$COLOR1│${NC} ${COLBG1}             ${WH}• USER CONFIG •                    │${NC}$COLOR1$NC"
 echo -e "$COLOR1╰═════════════════════════════════════════════════╯${NC}"
 echo -e "$COLOR1╭═════════════════════════════════════════════════╮${NC}"
 echo -e "$COLOR1│                                                 │"
@@ -734,11 +734,11 @@ echo -e "$COLOR1│${WH} User Tidak Ada!                              $COLOR1   
 echo -e "$COLOR1│                                                 │"
 echo -e "$COLOR1╰═════════════════════════════════════════════════╯${NC}"
 echo ""
-read -n 1 -s -r -p "Tekan [enter] untuk kembali ke menu"
+read -n 1 -s -r -p "Press any key to back on menu"
 m-sshovpn
 fi
 echo -e "$COLOR1╭═════════════════════════════════════════════════╮${NC}"
-echo -e "$COLOR1│${NC} ${COLBG1}             ${WH}  USER CONFIG                      │${NC}$COLOR1$NC"
+echo -e "$COLOR1│${NC} ${COLBG1}             ${WH}• USER CONFIG •                    │${NC}$COLOR1$NC"
 echo -e "$COLOR1╰═════════════════════════════════════════════════╯${NC}"
 echo -e "$COLOR1╭═════════════════════════════════════════════════╮${NC}"
 echo -e "$COLOR1│ ${WH}Silahkan Pilih User Yang Mau Dicek     $COLOR1         │"
@@ -770,13 +770,13 @@ else
 echo "$TEXT" > /etc/notiftele
 bash /etc/tele
 fi
-read -n 1 -s -r -p "   Tekan [enter] untuk kembali ke menu"
+read -n 1 -s -r -p "   Press any key to back on menu"
 menu
 }
 function hapuslama(){
 clear
 echo -e "$COLOR1╭═════════════════════════════════════════════════╮${NC}"
-echo -e "$COLOR1 ${NC} ${COLBG1}                 ${WH}  MEMBER SSH                   ${NC}$COLOR1$NC"
+echo -e "$COLOR1 ${NC} ${COLBG1}                 ${WH}• MEMBER SSH •                 ${NC}$COLOR1$NC"
 echo -e "$COLOR1╰═════════════════════════════════════════════════╯${NC}"
 echo -e "$COLOR1╭═════════════════════════════════════════════════╮${NC}"
 echo "USERNAME          EXP DATE          STATUS"
@@ -800,7 +800,7 @@ echo -e "$COLOR1╭════════════════════�
 echo "Account number: $JUMLAH user"
 echo -e "$COLOR1╰═════════════════════════════════════════════════╯${NC}"
 echo -e "$COLOR1╭═════════════════════════════════════════════════╮${NC}"
-echo -e "$COLOR1 ${NC}${COLBG1}              ${WH}  DELETE USERS                     ${NC}$COLOR1$NC"
+echo -e "$COLOR1 ${NC}${COLBG1}              ${WH}• DELETE USERS •                   ${NC}$COLOR1$NC"
 echo -e "$COLOR1╰═════════════════════════════════════════════════╯${NC}"
 echo -e "$COLOR1╭═════════════════════════════════════════════════╮${NC}"
 echo ""
@@ -812,7 +812,7 @@ else
 echo -e "Failure: User $Pengguna Not Exist."
 fi
 sed -i "/^### $Pengguna/d" /etc/xray/ssh
-read -n 1 -s -r -p "Tekan [enter] untuk kembali ke menu"
+read -n 1 -s -r -p "Press any key to back on menu"
 m-sshovpn
 }
 function cek(){
@@ -825,7 +825,7 @@ CITY=$(cat /etc/xray/city)
 domain=$(cat /etc/xray/domain)
 author=$(cat /etc/profil)
 echo -e "$COLOR1╭═════════════════════════════════════════════════╮${NC}"
-echo -e "$COLOR1│${NC} ${COLBG1}             ${WH}  SSH ACTIVE USERS                ${NC} $COLOR1│ $NC"
+echo -e "$COLOR1│${NC} ${COLBG1}             ${WH}• SSH ACTIVE USERS •              ${NC} $COLOR1│ $NC"
 echo -e "$COLOR1╰═════════════════════════════════════════════════╯${NC}"
 rm -rf /tmp/ssh2
 sleep 3
@@ -908,7 +908,7 @@ cat /tmp/vpn-login-udp.txt
 fi
 echo -e "$COLOR1╰═════════════════════════════════════════════════╯${NC}"
 echo ""
-read -n 1 -s -r -p "Tekan [enter] untuk kembali ke menu"
+read -n 1 -s -r -p "Press any key to back on menu"
 m-sshovpn
 }
 function limitssh(){
@@ -924,7 +924,7 @@ echo "You have no existing clients!"
 echo ""
 echo -e "$COLOR1━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo ""
-read -n 1 -s -r -p "Tekan [enter] untuk kembali ke menu"
+read -n 1 -s -r -p "Press any key to back on menu"
 m-sshovpn
 fi
 echo -e "$COLOR1━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
@@ -986,7 +986,7 @@ echo " Limit IP    : $iplim IP"
 echo ""
 echo -e "$COLOR1━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo ""
-read -n 1 -s -r -p "Tekan [enter] untuk kembali ke menu"
+read -n 1 -s -r -p "Press any key to back on menu"
 m-sshovpn
 }
 clear
@@ -1010,7 +1010,7 @@ elif [[ $lock == "1" ]]; then
 clear
 echo "lock" > /etc/typessh
 echo -e "$COLOR1╭═══════════════════════════════════════════════╮${NC}"
-echo -e "$COLOR1│${NC} ${COLBG1}          ${WH}  SETTING MULTI LOGIN              ${NC} $COLOR1│ $NC"
+echo -e "$COLOR1│${NC} ${COLBG1}          ${WH}• SETTING MULTI LOGIN •            ${NC} $COLOR1│ $NC"
 echo -e "$COLOR1╰═══════════════════════════════════════════════╯${NC}"
 echo -e "$COLOR1╭═══════════════════════════════════════════════╮${NC}"
 echo -e "$COLOR1│$NC Succes Ganti Auto Lock  ${NC}"
@@ -1021,7 +1021,7 @@ elif [[ $lock == "2" ]]; then
 clear
 echo "delete" > /etc/typessh
 echo -e "$COLOR1╭═══════════════════════════════════════════════╮${NC}"
-echo -e "$COLOR1│${NC} ${COLBG1}          ${WH}  SETTING MULTI LOGIN              ${NC} $COLOR1│ $NC"
+echo -e "$COLOR1│${NC} ${COLBG1}          ${WH}• SETTING MULTI LOGIN •            ${NC} $COLOR1│ $NC"
 echo -e "$COLOR1╰═══════════════════════════════════════════════╯${NC}"
 echo -e "$COLOR1╭═══════════════════════════════════════════════╮${NC}"
 echo -e "$COLOR1│$NC Succes Ganti Auto Delete Accounr ${NC}"
@@ -1033,7 +1033,7 @@ type=$(cat /etc/typessh)
 if [ $type = "lock" ]; then
 clear
 echo -e "$COLOR1╭═══════════════════════════════════════════════╮${NC}"
-echo -e "$COLOR1│${NC} ${COLBG1}          ${WH}  SETTING MULTI LOGIN              ${NC} $COLOR1│ $NC"
+echo -e "$COLOR1│${NC} ${COLBG1}          ${WH}• SETTING MULTI LOGIN •            ${NC} $COLOR1│ $NC"
 echo -e "$COLOR1╰═══════════════════════════════════════════════╯${NC}"
 echo -e "$COLOR1╭═══════════════════════════════════════════════╮${NC}"
 echo -e "$COLOR1│$NC SILAHKAN TULIS JUMLAH WAKTU UNTUK LOCKED  ${NC}"
@@ -1043,7 +1043,7 @@ read -rp "   Jumlah Waktu Lock: " -e notif2
 echo "${notif2}" > /etc/waktulockssh
 clear
 echo -e "$COLOR1╭═══════════════════════════════════════════════╮${NC}"
-echo -e "$COLOR1│${NC} ${COLBG1}          ${WH}  SETTING MULTI LOGIN              ${NC} $COLOR1│ $NC"
+echo -e "$COLOR1│${NC} ${COLBG1}          ${WH}• SETTING MULTI LOGIN •            ${NC} $COLOR1│ $NC"
 echo -e "$COLOR1╰═══════════════════════════════════════════════╯${NC}"
 echo -e "$COLOR1╭═══════════════════════════════════════════════╮${NC}"
 echo -e "${COLOR1}│ $NC SILAHKAN TULIS JUMLAH NOTIFIKASI UNTUK AUTO LOCK    ${NC}"
@@ -1054,7 +1054,7 @@ cd /etc/xray/sshx
 echo "$notif" > notif
 clear
 echo -e "$COLOR1╭═══════════════════════════════════════════════╮${NC}"
-echo -e "$COLOR1│${NC} ${COLBG1}          ${WH}  SETTING MULTI LOGIN              ${NC} $COLOR1│ $NC"
+echo -e "$COLOR1│${NC} ${COLBG1}          ${WH}• SETTING MULTI LOGIN •            ${NC} $COLOR1│ $NC"
 echo -e "$COLOR1╰═══════════════════════════════════════════════╯${NC}"
 echo -e "$COLOR1╭═══════════════════════════════════════════════╮${NC}"
 echo -e "${COLOR1}│ $NC SUCCES GANTI NOTIF LOCK JADI $notif $NC "
@@ -1062,7 +1062,7 @@ echo -e "${COLOR1}│ $NC SUCCES GANTI TIME NOTIF LOCK JADI $notif2 MENIT $NC "
 echo -e "$COLOR1╰═══════════════════════════════════════════════╯${NC}"
 else
 echo -e "$COLOR1╭═══════════════════════════════════════════════╮${NC}"
-echo -e "$COLOR1│${NC} ${COLBG1}          ${WH}  SETTING MULTI LOGIN              ${NC} $COLOR1│ $NC"
+echo -e "$COLOR1│${NC} ${COLBG1}          ${WH}• SETTING MULTI LOGIN •            ${NC} $COLOR1│ $NC"
 echo -e "$COLOR1╰═══════════════════════════════════════════════╯${NC}"
 echo -e "$COLOR1╭═══════════════════════════════════════════════╮${NC}"
 echo -e "$COLOR1│$NC SILAHKAN TULIS JUMLAH WAKTU UNTUK UNTUK SCAN ${NC}"
@@ -1075,7 +1075,7 @@ echo "PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin" >>/etc/
 echo "*/$notif2 * * * *  root /usr/bin/tendang" >>/etc/cron.d/tendang
 clear
 echo -e "$COLOR1╭═══════════════════════════════════════════════╮${NC}"
-echo -e "$COLOR1│${NC} ${COLBG1}          ${WH}  SETTING MULTI LOGIN              ${NC} $COLOR1│ $NC"
+echo -e "$COLOR1│${NC} ${COLBG1}          ${WH}• SETTING MULTI LOGIN •            ${NC} $COLOR1│ $NC"
 echo -e "$COLOR1╰═══════════════════════════════════════════════╯${NC}"
 echo -e "$COLOR1╭═══════════════════════════════════════════════╮${NC}"
 echo -e "${COLOR1}│ $NC SILAHKAN TULIS JUMLAH NOTIFIKASI UNTUK AUTO LOCK    ${NC}"
@@ -1086,14 +1086,14 @@ cd /etc/xray/sshx
 echo "$notif" > notif
 clear
 echo -e "$COLOR1╭═══════════════════════════════════════════════╮${NC}"
-echo -e "$COLOR1│${NC} ${COLBG1}          ${WH}  SETTING MULTI LOGIN              ${NC} $COLOR1│ $NC"
+echo -e "$COLOR1│${NC} ${COLBG1}          ${WH}• SETTING MULTI LOGIN •            ${NC} $COLOR1│ $NC"
 echo -e "$COLOR1╰═══════════════════════════════════════════════╯{NC}"
 echo -e "$COLOR1╭═══════════════════════════════════════════════╮${NC}"
 echo -e "${COLOR1}│ $NC SUCCES GANTI NOTIF LOCK JADI $notif $NC "
 echo -e "${COLOR1}│ $NC SUCCES GANTI TIME NOTIF LOCK JADI $notif2 MENIT $NC "
 echo -e "$COLOR1╰═══════════════════════════════════════════════╯${NC}"
 fi
-read -n 1 -s -r -p "Tekan [enter] untuk kembali ke menu"
+read -n 1 -s -r -p "Press any key to back on menu"
 m-sshovpn
 }
 function lockssh(){
@@ -1111,7 +1111,7 @@ echo ""
 echo "You have no existing user Lock!"
 echo ""
 echo -e "$COLOR1━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-read -n 1 -s -r -p "Tekan [enter] untuk kembali ke menu"
+read -n 1 -s -r -p "Press any key to back on menu"
 m-sshovpn
 fi
 clear
@@ -1172,13 +1172,13 @@ echo " Client Name : $user"
 echo " Status  : Unlocked"
 echo -e "$COLOR1━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo ""
-read -n 1 -s -r -p "Tekan [enter] untuk kembali ke menu"
+read -n 1 -s -r -p "Press any key to back on menu"
 m-sshovpn
 }
 clear
 author=$(cat /etc/profil)
 echo -e " $COLOR1╭════════════════════════════════════════════════════╮${NC}"
-echo -e " $COLOR1│${NC} ${COLBG1}            ${WH}  SSH PANEL MENU                      ${NC} $COLOR1│ $NC"
+echo -e " $COLOR1│${NC} ${COLBG1}            ${WH}• SSH PANEL MENU •                    ${NC} $COLOR1│ $NC"
 echo -e " $COLOR1╰════════════════════════════════════════════════════╯${NC}"
 echo -e " $COLOR1╭════════════════════════════════════════════════════╮${NC}"
 echo -e " $COLOR1│ $NC  ${WH}[${COLOR1}01${WH}]${NC} ${COLOR1}• ${WH}ADD AKUN${NC}        ${WH}[${COLOR1}05${WH}]${NC} ${COLOR1}• ${WH}CEK USER ONLINE${NC}    $COLOR1│ $NC"
@@ -1187,8 +1187,11 @@ echo -e " $COLOR1│ $NC  ${WH}[${COLOR1}03${WH}]${NC} ${COLOR1}• ${WH}RENEW A
 echo -e " $COLOR1│ $NC  ${WH}[${COLOR1}04${WH}]${NC} ${COLOR1}• ${WH}DELETE AKUN${NC}     ${WH}[${COLOR1}08${WH}]${NC} ${COLOR1}• ${WH}SETTING LOCK LOGIN${NC} $COLOR1│ $NC"
 echo -e " $COLOR1│ $NC  ${WH}[${COLOR1}00${WH}]${NC} ${COLOR1}• ${WH}GO BACK${NC}         ${WH}[${COLOR1}09${WH}]${NC} ${COLOR1}• ${WH}UNLOCK LOGIN${NC}      $COLOR1 │$NC"
 echo -e " $COLOR1╰════════════════════════════════════════════════════╯${NC}"
+echo -e " $COLOR1╭═════════════════════════ ${WH}BY${NC} ${COLOR1}═══════════════════════╮ ${NC}"
+echo -e "  $COLOR1${NC}              ${WH}   • $author •                 $COLOR1 $NC"
+echo -e " $COLOR1╰════════════════════════════════════════════════════╯${NC}"
 echo -e ""
-echo -ne " ${WH}PILIH menu ${COLOR1}: ${WH}"; read opt
+echo -ne " ${WH}Select menu ${COLOR1}: ${WH}"; read opt
 case $opt in
 01 | 1) clear ; usernew ; exit ;;
 02 | 2) clear ; trial ; exit ;;

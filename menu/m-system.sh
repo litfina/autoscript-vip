@@ -16,7 +16,7 @@ if [[ $date_list < $useexp ]]; then
 echo -ne
 else
 echo -e "$COLOR1╭═════════════════════════════════════════════════╮${NC}"
-echo -e "$COLOR1 ${NC} ${COLBG1}          ${WH} AUTOSCRIPT PREMIUM                ${NC} $COLOR1 $NC"
+echo -e "$COLOR1 ${NC} ${COLBG1}          ${WH}• AUTOSCRIPT PREMIUM •               ${NC} $COLOR1 $NC"
 echo -e "$COLOR1╰═════════════════════════════════════════════════╯${NC}"
 echo -e "$COLOR1╭═════════════════════════════════════════════════╮${NC}"
 echo -e "            ${RED}PERMISSION DENIED !${NC}"
@@ -86,7 +86,7 @@ clear
 echo -e  "$COLOR1╭══════════════════════════════════════════╮${NC}"
 echo -e  "$COLOR1│             ${WH}TERIMA KASIH                 $COLOR1│${NC}"
 echo -e  "$COLOR1│        ${WH}SUDAH MENGGUNAKAN SCRIPT          $COLOR1│${NC}"
-echo -e  "$COLOR1│               ${WH}LITFINA STORE                  $COLOR1│${NC}"
+echo -e  "$COLOR1│               ${WH}DARI SAYA                  $COLOR1│${NC}"
 echo -e  "$COLOR1╰══════════════════════════════════════════╯${NC}"
 echo " "
 until [[ $dnss =~ ^[a-zA-Z0-9_.-]+$ ]]; do
@@ -105,7 +105,7 @@ echo -e "$COLOR1╭════════════════════�
 echo -e "$COLOR1│ \033[1;37mPlease select a your Choice to Set Domain$COLOR1│${NC}"
 echo -e "$COLOR1╰══════════════════════════════════════════╯${NC}"
 echo -e "$COLOR1╭══════════════════════════════════════════╮${NC}"
-echo -e "$COLOR1│  [ 1 ]  \033[1;37mDomain xxx.godkiller.cloud       ${NC}"
+echo -e "$COLOR1│  [ 1 ]  \033[1;37mDomain xxx.tepllovpn.eu.org       ${NC}"
 echo -e "$COLOR1╰══════════════════════════════════════════╯${NC}"
 until [[ $domain2 =~ ^[1-2]+$ ]]; do
 read -p "   Please select numbers : " domain2
@@ -139,7 +139,7 @@ clear
 echo -e  "$COLOR1╭══════════════════════════════════════════╮${NC}"
 echo -e  "$COLOR1│             ${WH}TERIMA KASIH                 $COLOR1│${NC}"
 echo -e  "$COLOR1│        ${WH}SUDAH MENGGUNAKAN SCRIPT          $COLOR1│${NC}"
-echo -e  "$COLOR1│               ${WH}LITFINA                   $COLOR1│${NC}"
+echo -e  "$COLOR1│               ${WH}TUNNEL STORES                   $COLOR1│${NC}"
 echo -e  "$COLOR1╰══════════════════════════════════════════╯${NC}"
 echo " "
 until [[ $dns1 =~ ^[a-zA-Z0-9_.-]+$ ]]; do
@@ -153,7 +153,7 @@ clear
 echo -e  "$COLOR1╭══════════════════════════════════════════╮${NC}"
 echo -e  "$COLOR1│             ${WH}TERIMA KASIH                 $COLOR1│${NC}"
 echo -e  "$COLOR1│        ${WH}SUDAH MENGGUNAKAN SCRIPT          $COLOR1│${NC}"
-echo -e  "$COLOR1│               ${WH}LITFINA                   $COLOR1│${NC}"
+echo -e  "$COLOR1│               ${WH}TUNNEL STORES                   $COLOR1│${NC}"
 echo -e  "$COLOR1╰══════════════════════════════════════════╯${NC}"
 echo " "
 until [[ $dns2 =~ ^[a-zA-Z0-9_.-]+$ ]]; do
@@ -168,7 +168,7 @@ clear
 echo -e  "$COLOR1╭══════════════════════════════════════════╮${NC}"
 echo -e  "$COLOR1│             ${WH}TERIMA KASIH                 $COLOR1│${NC}"
 echo -e  "$COLOR1│        ${WH}SUDAH MENGGUNAKAN SCRIPT          $COLOR1│${NC}"
-echo -e  "$COLOR1│               ${WH}LITFINA                   $COLOR1│${NC}"
+echo -e  "$COLOR1│               ${WH}TUNNEL STORES                   $COLOR1│${NC}"
 echo -e  "$COLOR1╰══════════════════════════════════════════╯${NC}"
 echo " "
 until [[ $dnscl =~ ^[a-zA-Z0-9_.-]+$ ]]; do
@@ -280,7 +280,7 @@ echo "No reboot activity found"
 echo -e ""
 echo -e "$COLOR1━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo ""
-read -n 1 -s -r -p "Tekan [enter] untuk kembali ke menu"
+read -n 1 -s -r -p "Press any key to back on menu"
 auto-reboot
 else
 clear
@@ -293,7 +293,7 @@ cat /etc/log-reboot.txt
 echo -e ""
 echo -e "$COLOR1━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo ""
-read -n 1 -s -r -p "Tekan [enter] untuk kembali ke menu"
+read -n 1 -s -r -p "Press any key to back on menu"
 auto-reboot
 fi
 elif test $x -eq 10; then
@@ -307,7 +307,7 @@ echo "Auto Reboot Log successfully deleted!"
 echo -e ""
 echo -e "$COLOR1━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo ""
-read -n 1 -s -r -p "Tekan [enter] untuk kembali ke menu"
+read -n 1 -s -r -p "Press any key to back on menu"
 auto-reboot
 elif test $x -eq 0; then
 clear
@@ -317,7 +317,7 @@ clear
 echo ""
 echo "Options Not Found In Menu"
 echo ""
-read -n 1 -s -r -p "Tekan [enter] untuk kembali ke menu"
+read -n 1 -s -r -p "Press any key to back on menu"
 auto-reboot
 fi
 }
@@ -356,7 +356,7 @@ vnstat
 echo -e ""
 echo -e "${COLOR1}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo -e ""
-read -n 1 -s -r -p "Tekan [enter] untuk kembali ke menu"
+read -n 1 -s -r -p "Press any key to back on menu"
 bw
 ;;
 2)
@@ -369,7 +369,7 @@ vnstat -5
 echo -e ""
 echo -e "${COLOR1}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo -e ""
-read -n 1 -s -r -p "Tekan [enter] untuk kembali ke menu"
+read -n 1 -s -r -p "Press any key to back on menu"
 bw
 ;;
 3)
@@ -382,7 +382,7 @@ vnstat -h
 echo -e ""
 echo -e "${COLOR1}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo -e ""
-read -n 1 -s -r -p "Tekan [enter] untuk kembali ke menu"
+read -n 1 -s -r -p "Press any key to back on menu"
 bw
 ;;
 4)
@@ -395,7 +395,7 @@ vnstat -d
 echo -e ""
 echo -e "${COLOR1}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo -e ""
-read -n 1 -s -r -p "Tekan [enter] untuk kembali ke menu"
+read -n 1 -s -r -p "Press any key to back on menu"
 bw
 ;;
 5)
@@ -408,7 +408,7 @@ vnstat -m
 echo -e ""
 echo -e "${COLOR1}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo -e ""
-read -n 1 -s -r -p "Tekan [enter] untuk kembali ke menu"
+read -n 1 -s -r -p "Press any key to back on menu"
 bw
 ;;
 6)
@@ -421,7 +421,7 @@ vnstat -y
 echo -e ""
 echo -e "${COLOR1}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo -e ""
-read -n 1 -s -r -p "Tekan [enter] untuk kembali ke menu"
+read -n 1 -s -r -p "Press any key to back on menu"
 bw
 ;;
 7)
@@ -434,7 +434,7 @@ vnstat -t
 echo -e ""
 echo -e "${COLOR1}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo -e ""
-read -n 1 -s -r -p "Tekan [enter] untuk kembali ke menu"
+read -n 1 -s -r -p "Press any key to back on menu"
 bw
 ;;
 8)
@@ -447,7 +447,7 @@ vnstat -hg
 echo -e ""
 echo -e "${COLOR1}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo -e ""
-read -n 1 -s -r -p "Tekan [enter] untuk kembali ke menu"
+read -n 1 -s -r -p "Press any key to back on menu"
 bw
 ;;
 9)
@@ -461,7 +461,7 @@ vnstat -l
 echo -e ""
 echo -e "${COLOR1}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo -e ""
-read -n 1 -s -r -p "Tekan [enter] untuk kembali ke menu"
+read -n 1 -s -r -p "Press any key to back on menu"
 bw
 ;;
 10)
@@ -474,7 +474,7 @@ vnstat -tr
 echo -e ""
 echo -e "${COLOR1}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo -e ""
-read -n 1 -s -r -p "Tekan [enter] untuk kembali ke menu"
+read -n 1 -s -r -p "Press any key to back on menu"
 bw
 ;;
 0)
@@ -677,13 +677,13 @@ echo " $IP:10000"
 echo ""
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo ""
-read -n 1 -s -r -p "Tekan [enter] untuk kembali ke menu"
+read -n 1 -s -r -p "Press any key to back on menu"
 m-webmin
 }
 function restart () {
 clear
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\E[0;100;33m          RESTART WEBMIN           \E[0m"
+echo -e "\E[0;100;33m        • RESTART WEBMIN •         \E[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 0.5
 echo ""
@@ -695,7 +695,7 @@ echo -e "\033[32m[Info]\033[0m Webmin Start Successfully !"
 echo ""
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo ""
-read -n 1 -s -r -p "Tekan [enter] untuk kembali ke menu"
+read -n 1 -s -r -p "Press any key to back on menu"
 m-webmin
 }
 function uninstall () {
@@ -716,7 +716,7 @@ echo -e "\033[32m[Info]\033[0m Webmin Uninstall Successfully !"
 echo ""
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo ""
-read -n 1 -s -r -p "Tekan [enter] untuk kembali ke menu"
+read -n 1 -s -r -p "Press any key to back on menu"
 m-webmin
 }
 if [[ "$cek" = "perl" ]]; then
@@ -726,7 +726,7 @@ sts="${Error}"
 fi
 clear
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\E[0;100;33m            WEBMIN MENU            \E[0m"
+echo -e "\E[0;100;33m          • WEBMIN MENU •          \E[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
 echo -e " Status $sts"
@@ -824,7 +824,7 @@ chmod 755 /usr/local/bin/xray
 systemctl restart xray
 echo -e  "$COLOR1 [ INFO ] ${WH}Succes Change Xray Core Mod Dharak"
 fi
-read -n 1 -s -r -p "Tekan [enter] untuk kembali ke menu"
+read -n 1 -s -r -p "Press any key to back on menu"
 menu
 }
 function dobot(){
@@ -847,7 +847,7 @@ read -p "   Please select numbers 1-3 or Any Button(BACK) : " dobot
 done
 if [[ $dobot == "1" ]]; then
 clear
-wget https://raw.githubusercontent.com/GermaOfc/permission/main/dobot/install.sh &> /dev/null
+wget https://raw.githubusercontent.com/litfina/autoscript-vip/main/dobot/install.sh &> /dev/null
 chmod +x install.sh
 bash install.sh
 rm -rf install.sh
@@ -858,7 +858,7 @@ if [[ -e /etc/dobot ]]; then
 echo -ne
 else
 echo -e " SILAHKAN INSTALL DULU BOT CREATE AKUN DIGITAL OCEAN NYA"
-read -n 1 -s -r -p "Tekan [enter] untuk kembali ke menu"
+read -n 1 -s -r -p "Press any key to back on menu"
 m-system
 fi
 until [[ $dobot2 =~ ^[0-9]+$ ]]; do
@@ -866,7 +866,7 @@ read -p "   SILAHKAN TULIS COPY BOTNYA CONTOH 1 atau 3 : " dobot2
 done
 if [[ -e /etc/dobot${dobot2} ]]; then
 echo -e "Angka Copyan Sudah ADA Silahkan tulis Angka yg lain"
-read -n 1 -s -r -p "Tekan [enter] untuk kembali ke menu"
+read -n 1 -s -r -p "Press any key to back on menu"
 m-system
 fi
 cp -r /etc/dobot /etc/dobot${dobot2}
@@ -918,7 +918,7 @@ echo "Auto-Shutdown $usagee TERA TURN ON."
 sleep 1
 fi
 fi
-read -n 1 -s -r -p "Tekan [enter] untuk kembali ke menu"
+read -n 1 -s -r -p "Press any key to back on menu"
 menu
 }
 function nameauthor(){
@@ -929,39 +929,39 @@ menu
 }
 clear
 echo -e " $COLOR1╔══════════════════════════════════════════════════════╗${NC}"
-echo -e " $COLOR1║${NC}${COLBG1}                 ${WH}  SYSTEM MENU                        ${NC}$COLOR1║ $NC"
+echo -e " $COLOR1║${NC}${COLBG1}                 ${WH}• SYSTEM MENU •                      ${NC}$COLOR1║ $NC"
 echo -e " $COLOR1╚══════════════════════════════════════════════════════╝${NC}"
 echo -e " $COLOR1╔══════════════════════════════════════════════════════╗${NC}"
-echo -e " $COLOR1║${NC} ${WH}[${COLOR1}01${WH}]${NC} ${COLOR1}• ${WH}CHANGE DOMAIN   ${WH}    ${WH}[${COLOR1}09${WH}]${NC} ${COLOR1}• ${WH}CHANGE BANNER   ${WH}   $COLOR1║ $NC"
+echo -e " $COLOR1║${NC} ${WH}[${COLOR1}01${WH}]${NC} ${COLOR1}• ${WH}CHANGE DOMAIN   ${WH}    ${WH}[${COLOR1}09${WH}]${NC} ${COLOR1}• ${WH}CHANGE BANNER ${WH}     $COLOR1║ $NC"
 echo -e " $COLOR1║${NC} ${WH}[${COLOR1}02${WH}]${NC} ${COLOR1}• ${WH}SPEEDTEST   ${WH}        ${WH}[${COLOR1}10${WH}]${NC} ${COLOR1}• ${WH}INSTALL ADBLOCK ${WH}   $COLOR1║ $NC"
 echo -e " $COLOR1║${NC} ${WH}[${COLOR1}03${WH}]${NC} ${COLOR1}• ${WH}AUTO REBOOT   ${WH}      ${WH}[${COLOR1}11${WH}]${NC} ${COLOR1}• ${WH}CHANGE  BOT INFO${WH}   $COLOR1║ $NC"
-echo -e " $COLOR1║${NC} ${WH}[${COLOR1}04${WH}]${NC} ${COLOR1}• ${WH}ADD BOT TELE${WH}        ${WH}[${COLOR1}12${WH}]${NC} ${COLOR1}• ${WH}FIX NGINX OFF${WH}      $COLOR1║ $NC"
-echo -e " $COLOR1║${NC} ${WH}[${COLOR1}05${WH}]${NC} ${COLOR1}• ${WH}BOT NOTIF${WH}           ${WH}[${COLOR1}13${WH}]${NC} ${COLOR1}• ${WH}REBOOT ${WH}            $COLOR1║ $NC"
-echo -e " $COLOR1║${NC} ${WH}[${COLOR1}06${WH}]${NC} ${COLOR1}• ${WH}INSTALL TCP BBR ${WH}    ${WH}[${COLOR1}14${WH}]${NC} ${COLOR1}• ${WH}BACKUP          ${WH}   $COLOR1║ $NC"
-echo -e " $COLOR1║${NC} ${WH}[${COLOR1}07${WH}]${NC} ${COLOR1}• ${WH}GANTI TEMA WARNA${WH}    ${WH}[${COLOR1}15${WH}]${NC} ${COLOR1}• ${WH}RESTART ${WH}           $COLOR1║ $NC"
-echo -e " $COLOR1║${NC} ${WH}[${COLOR1}08${WH}]${NC} ${COLOR1}• ${WH}RUNNING${WH}             ${WH}[${COLOR1}16${WH}]${NC} ${COLOR1}• ${WH}GANTI NAMA CLIENT${WH}  $COLOR1║ $NC"
-echo -e " $COLOR1║${NC} ${WH}[${COLOR1}00${WH}]${NC} ${COLOR1}• ${WH}GO BACK $NC            ${WH}[${COLOR1}17${WH}]${NC} ${COLOR1}• ${WH}CLEAR RAM CACHE ${WH}   $COLOR1║ $NC"
+echo -e " $COLOR1║${NC} ${WH}[${COLOR1}04${WH}]${NC} ${COLOR1}• ${WH}CHECK BANDWITH${WH}      ${WH}[${COLOR1}12${WH}]${NC} ${COLOR1}• ${WH}FIX NGINX OFF${WH}      $COLOR1║ $NC"
+echo -e " $COLOR1║${NC} ${WH}[${COLOR1}05${WH}]${NC} ${COLOR1}• ${WH}INSTALL WEBMIN${WH}      ${WH}[${COLOR1}13${WH}]${NC} ${COLOR1}• ${WH}CEK PERFORMA VPS ${WH}  $COLOR1║ $NC"
+echo -e " $COLOR1║${NC} ${WH}[${COLOR1}06${WH}]${NC} ${COLOR1}• ${WH}INSTALL TCP BBR ${WH}    ${WH}[${COLOR1}14${WH}]${NC} ${COLOR1}• ${WH}CHANGE CORE MENU${WH}   $COLOR1║ $NC"
+echo -e " $COLOR1║${NC} ${WH}[${COLOR1}07${WH}]${NC} ${COLOR1}• ${WH}GANTI TEMA WARNA${WH}    ${WH}[${COLOR1}15${WH}]${NC} ${COLOR1}• ${WH}BOT DO MENU ${WH}       $COLOR1║ $NC"
+echo -e " $COLOR1║${NC} ${WH}[${COLOR1}08${WH}]${NC} ${COLOR1}• ${WH}LIMIT SPEED${WH}         ${WH}[${COLOR1}16${WH}]${NC} ${COLOR1}• ${WH}GANTI NAMA CLIENT${WH}  $COLOR1║ $NC"
+echo -e " $COLOR1║${NC} ${WH}[${COLOR1}00${WH}]${NC} ${COLOR1}• ${WH}GO BACK $NC            ${WH}[${COLOR1}99${WH}]${NC} ${COLOR1}• ${WH}CLEAR RAM CACHE ${WH}   $COLOR1║ $NC"
 echo -e " $COLOR1╚══════════════════════════════════════════════════════╝${NC}"
 echo -e ""
-echo -ne " ${WH}PILIH MENU ${COLOR1}: ${WH}"; read opt
+echo -ne " ${WH}Select menu ${COLOR1}: ${WH}"; read opt
 case $opt in
 01 |1) clear ; add-host ; exit ;;
 02 |2) clear ; speed ; exit ;;
 03 |3) clear ; auto-reboot ; exit ;;
-04 |4) clear ; m-bot ; exit ;;
-05 |5) clear ; m-bot ; exit ;;
+04 |4) clear ; bw ; exit ;;
+05 |5) clear ; m-webmin ; exit ;;
 06 |6) clear ; m-tcp ; exit ;;
 07 |7) clear ; m-theme ; exit ;;
-08 |8) clear ; running ; exit ;;
+08 |8) clear ; limitspeed ; exit ;;
 09 |9) clear ; nano /etc/issue.net ; exit ;;
 10 |10) clear ; ins-helium ;;
 11 |11) clear ; m-bot2 ; exit ;;
 12 |12) clear ; certv2ray ; exit ;;
-13 |13) clear ; reboot ; exit ;;
-14 |14) clear ; m-backup ; exit ;;
-15 |15) clear ; restart ; exit ;;
+13 |13) clear ; gotopp ; exit ;;
+14 |14) clear ; coremenu ; exit ;;
+15 |15) clear ; dobot ; exit ;;
 16 |16) clear ; nameauthor ; exit ;;
-17 |17) clear ; clearcache ; exit ;;
+99 |99) clear ; clearcache ; exit ;;
 00 |0) clear ; menu ; exit ;;
 *) echo -e "" ; echo "Anda salah tekan" ; sleep 1 ; m-system ;;
 esac

@@ -15,11 +15,11 @@ checking_sc() {
     echo -e "\033[42m           PANEL ADMIN VVIP                 \033[0m"
     echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
     echo -e "            ${RED}DAFTAR DULU DEK !${NC}"
-    echo -e "   \033[0;33mYour VPS${NC} $ipsaya \033[0;33mHas Gak Di izinin${NC}"
+    echo -e "   \033[0;33mYour VPS${NC} $ipsaya \033[0;33mHas been Banned${NC}"
     echo -e "     \033[0;33mBuy access permissions for scripts${NC}"
     echo -e "             \033[0;33mContact Admin :${NC}"
-    echo -e "         \033[0;36mTelegram${NC} t.me/destiavpnstore"
-    echo -e "      ${GREEN}WhatsApp${NC} wa.me/6281325348667"
+    echo -e "         \033[0;36mTelegram${NC} t.me/diwayaa"
+    echo -e "      ${GREEN}WhatsApp${NC} wa.me/6281252555218"
     echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
 read -n 1 -s -r -p "  Press any key to back on menu"
 menu
@@ -74,7 +74,7 @@ URL="https://api.telegram.org/bot$KEY/sendMessage"
     exit 0
     fi
     echo -e ""
-    read -p "Username (Contoh : germa) : " name
+    read -p "Username (Contoh : Tunnel-Stores) : " name
     echo -e ""
     clear
     echo -e ""
